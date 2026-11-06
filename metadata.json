@@ -1,0 +1,8 @@
+{
+  "name": "Remix FYP360 - Academic Project Jury Management Portal",
+  "description": "A calm, formal academic project-management portal for universities featuring jury evaluation workflows, project dossiers, rubric assessments, and defense schedules.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

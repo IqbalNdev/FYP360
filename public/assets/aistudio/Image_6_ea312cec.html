@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-variant": "#e3e2e5",
+          "on-primary": "#ffffff",
+          "secondary-fixed-dim": "#66dac1",
+          "on-tertiary-fixed": "#2c1600",
+          "surface": "#faf9fc",
+          "on-secondary-fixed-variant": "#005144",
+          "surface-container-high": "#e9e7eb",
+          "teal-tint": "#E7F5F2",
+          "inverse-primary": "#b2c7f0",
+          "sidebar-navy": "#0B1F3A",
+          "outline-variant": "#c4c6cf",
+          "secondary-container": "#81f4da",
+          "inverse-on-surface": "#f2f0f3",
+          "on-tertiary-container": "#b4875a",
+          "error-container": "#ffdad6",
+          "on-primary-fixed-variant": "#32476a",
+          "muted-text": "#6B7A90",
+          "on-primary-container": "#7c91b7",
+          "danger-bg": "#FDE8E6",
+          "on-tertiary-fixed-variant": "#623f19",
+          "surface-container-lowest": "#ffffff",
+          "info-tint": "#EAF0F7",
+          "card-surface": "#FFFFFF",
+          "surface-tint": "#4a5f83",
+          "danger-text": "#C2392F",
+          "inverse-surface": "#303033",
+          "outline": "#74777f",
+          "on-secondary-container": "#00705f",
+          "tertiary-fixed": "#ffdcbd",
+          "on-primary-fixed": "#021b3c",
+          "surface-container-highest": "#e3e2e5",
+          "tertiary-container": "#3f2200",
+          "primary-fixed": "#d6e3ff",
+          "tertiary": "#221000",
+          "badge-coral": "#E8705A",
+          "surface-container-low": "#f5f3f6",
+          "primary": "#001431",
+          "surface-container": "#efedf0",
+          "secondary-fixed": "#84f6dd",
+          "teal-accent": "#129C86",
+          "sidebar-navy-gradient": "#0E2747",
+          "secondary": "#006b5b",
+          "on-secondary": "#ffffff",
+          "primary-fixed-dim": "#b2c7f0",
+          "on-surface-variant": "#44474e",
+          "surface-bright": "#faf9fc",
+          "on-secondary-fixed": "#00201a",
+          "background": "#faf9fc",
+          "error": "#ba1a1a",
+          "tertiary-fixed-dim": "#f0bd8b",
+          "on-surface": "#1b1b1e",
+          "on-error-container": "#93000a",
+          "warning-text": "#B26B00",
+          "on-background": "#1b1b1e",
+          "primary-container": "#12294a",
+          "on-error": "#ffffff",
+          "on-tertiary": "#ffffff",
+          "warning-bg": "#FDF1E1",
+          "card-border": "#E8ECF2",
+          "surface-dim": "#dbd9dd",
+          "page-canvas": "#F4F6FA"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-xl": "40px",
+          "space-sm": "8px",
+          "space-lg": "24px",
+          "space-md": "16px",
+          "gutter": "24px",
+          "margin": "40px",
+          "space-xs": "4px"
+        },
+        "fontFamily": {
+          "label-lg": ["Inter"],
+          "body-lg": ["Inter"],
+          "headline-lg": ["Inter"],
+          "body-md": ["Inter"],
+          "headline-xl": ["Inter"],
+          "big-number": ["Inter"],
+          "label-md": ["Inter"],
+          "headline-md": ["Inter"],
+          "eyebrow": ["Inter"],
+          "headline-sm": ["Inter"]
+        },
+        "fontSize": {
+          "label-lg": ["13px", {"lineHeight": "18px", "fontWeight": "500"}],
+          "body-lg": ["15px", {"lineHeight": "22px", "fontWeight": "400"}],
+          "headline-lg": ["36px", {"lineHeight": "44px", "fontWeight": "300"}],
+          "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+          "headline-xl": ["40px", {"lineHeight": "48px", "fontWeight": "300"}],
+          "big-number": ["32px", {"lineHeight": "38px", "fontWeight": "600"}],
+          "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+          "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+          "eyebrow": ["12px", {"lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "700"}],
+          "headline-sm": ["18px", {"lineHeight": "24px", "fontWeight": "500"}]
+        }
+      }
+    }
+  }</script></head><body class="bg-page-canvas font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[260px] bg-sidebar-navy z-50 flex flex-col justify-between select-none shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-[72px] flex items-center px-space-lg gap-3"><div class="w-9 h-9 rounded-lg bg-teal-accent flex items-center justify-center text-on-primary font-headline-sm text-headline-sm font-bold shadow-[0_1px_8px_rgba(0,0,0,0.04)]">F</div><div class="flex flex-col leading-tight"><span class="text-on-primary font-headline-sm text-headline-sm font-semibold tracking-tight">FYP360</span><span class="text-muted-text font-eyebrow text-eyebrow uppercase text-[10px] tracking-wider">PROJECT MANAGEMENT</span></div></div><div class="px-space-md pt-space-md"><span class="px-space-sm font-eyebrow text-eyebrow text-muted-text uppercase text-[11px] tracking-wider block mb-2">WORKSPACE</span><nav class="flex flex-col gap-1" data-active-classes="bg-teal-accent/20 text-on-primary border-l-[3px] border-teal-accent font-medium"><a class="h-12 px-space-md rounded-r-lg flex items-center gap-3 text-muted-text hover:bg-sidebar-navy-gradient hover:text-on-primary transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span class="font-label-lg text-label-lg">Dashboard</span></a><a aria-current="page" class="h-12 px-space-md rounded-r-lg flex items-center justify-between transition-colors bg-teal-accent/20 text-on-primary border-l-[3px] border-teal-accent font-medium" data-path="assigned-projects" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">folder_shared</span><span class="font-label-lg text-label-lg">Assigned Projects</span></div><span class="h-5 min-w-[20px] px-1.5 rounded-full bg-badge-coral text-on-primary font-label-md text-label-md flex items-center justify-center font-bold">2</span></a><a class="h-12 px-space-md rounded-r-lg flex items-center gap-3 text-muted-text hover:bg-sidebar-navy-gradient hover:text-on-primary transition-colors" data-path="my-evaluations" href="#"><span class="material-symbols-outlined text-[20px]">fact_check</span><span class="font-label-lg text-label-lg">My Evaluations</span></a></nav></div><div class="px-space-md pt-space-lg"><span class="px-space-sm font-eyebrow text-eyebrow text-muted-text uppercase text-[11px] tracking-wider block mb-2">ACCOUNT</span><nav class="flex flex-col gap-1" data-active-classes="bg-teal-accent/20 text-on-primary border-l-[3px] border-teal-accent font-medium"><a class="h-12 px-space-md rounded-r-lg flex items-center gap-3 text-muted-text hover:bg-sidebar-navy-gradient hover:text-on-primary transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Settings</span></a></nav></div></div><div class="p-space-lg bg-sidebar-navy/80"><div class="font-eyebrow text-eyebrow text-muted-text uppercase text-[10px] tracking-wider leading-relaxed">Academic year 2024 — 2025</div><div class="font-label-md text-label-md text-on-primary/90 font-medium tracking-normal mt-0.5">YOUR UNIVERSITY</div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-[72px] bg-card-surface/90 backdrop-blur-xl z-40 px-space-xl flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-2"><span class="font-label-lg text-label-lg text-muted-text">Jury Portal</span><span class="font-label-lg text-label-lg text-muted-text">/</span><span class="font-label-lg text-label-lg text-on-surface font-semibold">Assigned Projects</span></div><div class="flex items-center gap-space-lg"><div class="relative flex items-center justify-center cursor-pointer"><span class="material-symbols-outlined text-muted-text hover:text-on-surface transition-colors text-[22px]">notifications</span><span class="absolute top-0 right-0 w-2 h-2 rounded-full bg-danger-text"></span></div><div class="w-px h-6 bg-surface-variant"></div><div class="flex items-center gap-3"><div class="flex flex-col text-right"><span class="font-label-lg text-label-lg text-on-surface font-medium leading-tight">Dr. Sana Farooq</span><span class="font-label-md text-label-md text-muted-text leading-tight">Department of Software Engineering</span></div><div class="w-9 h-9 rounded-full bg-teal-accent text-on-primary flex items-center justify-center font-label-lg text-label-lg font-semibold shadow-[0_1px_8px_rgba(0,0,0,0.04)]">SF</div></div></div></header><main class="relative pt-[72px] bg-page-canvas min-h-screen px-space-xl py-space-xl"><div class="max-w-[940px] mx-auto"><div class="flex flex-col w-full pb-space-xl">
+<!-- Page Header -->
+<header class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col">
+<span class="font-eyebrow text-eyebrow text-teal-accent tracking-widest uppercase mb-1">ASSIGNED PROJECTS</span>
+<h1 class="font-headline-lg text-headline-lg text-primary-container tracking-tight">Assigned Projects</h1>
+<p class="font-body-lg text-body-lg text-muted-text mt-1">Projects allocated to you by the FYP Coordinator.</p>
+</div>
+<!-- Quick Stats Bar -->
+<div class="flex items-center gap-space-sm bg-card-surface px-space-md py-2.5 rounded-xl shadow-sm">
+<div class="flex items-center gap-2 pr-space-md">
+<span class="w-2 h-2 rounded-full bg-teal-accent"></span>
+<span class="font-label-md text-label-md text-muted-text">Active: <span class="font-semibold text-on-surface">4</span></span>
+</div>
+<div class="w-px h-4 bg-card-border"></div>
+<div class="flex items-center gap-2 pl-space-sm">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+<span class="font-label-md text-label-md text-muted-text">Excused: <span class="font-semibold text-on-surface">1</span></span>
+</div>
+</div>
+</header>
+<!-- Advisory / Session Overview Banner -->
+<div class="bg-teal-tint rounded-2xl p-space-md mb-space-lg flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-teal-accent/15 flex items-center justify-center text-teal-accent flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-semibold text-secondary">Defense Session · Hall C-2</span>
+<span class="px-2 py-0.5 rounded-full bg-teal-accent text-on-primary font-eyebrow text-[10px] tracking-wider uppercase">Advisory</span>
+</div>
+<p class="font-body-md text-body-md text-on-secondary-container">Oct 28, 2026 · Evaluation rubric weights automatically assigned per FYP Committee policy.</p>
+</div>
+</div>
+<div class="hidden sm:flex items-center gap-1.5 text-secondary font-label-md text-label-md font-medium">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Jury Verified</span>
+</div>
+</div>
+<!-- Cards Vertical List -->
+<div class="flex flex-col gap-5">
+<!-- Card 1 -->
+<article class="bg-card-surface rounded-[20px] p-6 lg:p-7 shadow-sm hover:shadow-md transition-shadow duration-200">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+<div class="flex items-start gap-5 min-w-0">
+<!-- Numbered Tile -->
+<div class="w-12 h-12 rounded-2xl bg-primary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm font-semibold flex-shrink-0 shadow-sm">
+            1
+          </div>
+<div class="flex flex-col min-w-0">
+<!-- Eyebrow -->
+<div class="font-eyebrow text-eyebrow text-muted-text uppercase tracking-wider mb-1">
+              FYP-CS-2025-042 · FYP1 DEFENSE
+            </div>
+<!-- Title -->
+<h2 class="font-headline-sm text-headline-sm font-semibold text-primary-container truncate mb-3">
+              AI-Powered Student Career Guidance System
+            </h2>
+<!-- Metadata Row -->
+<div class="flex flex-wrap items-center gap-2.5">
+<span class="inline-flex items-center px-3 py-1 rounded-lg bg-info-tint text-primary font-label-md text-label-md">
+                Machine Learning & AI
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-tint text-secondary font-label-md text-label-md font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-teal-accent"></span>
+                Submitted
+              </span>
+<span class="inline-flex items-center gap-1.5 text-muted-text font-label-md text-label-md pl-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                Oct 28, 2026 · 10:00 AM
+              </span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-3 self-end lg:self-center flex-shrink-0">
+<button class="h-11 px-5 rounded-[14px] bg-card-surface hover:bg-surface-container text-primary-container font-label-lg text-label-lg font-medium transition-colors shadow-sm" type="button">
+            View project
+          </button>
+<button class="h-11 px-5 rounded-[14px] bg-primary-container hover:bg-sidebar-navy text-on-primary font-label-lg text-label-lg font-medium inline-flex items-center gap-2 transition-colors shadow-sm" type="button">
+<span>Evaluate</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-card-surface rounded-[20px] p-6 lg:p-7 shadow-sm hover:shadow-md transition-shadow duration-200">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+<div class="flex items-start gap-5 min-w-0">
+<!-- Numbered Tile -->
+<div class="w-12 h-12 rounded-2xl bg-primary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm font-semibold flex-shrink-0 shadow-sm">
+            2
+          </div>
+<div class="flex flex-col min-w-0">
+<!-- Eyebrow -->
+<div class="font-eyebrow text-eyebrow text-muted-text uppercase tracking-wider mb-1">
+              FYP-CS-2025-017 · FYP1 DEFENSE
+            </div>
+<!-- Title -->
+<h2 class="font-headline-sm text-headline-sm font-semibold text-primary-container truncate mb-3">
+              Smart Waste Segregation Using Computer Vision
+            </h2>
+<!-- Metadata Row -->
+<div class="flex flex-wrap items-center gap-2.5">
+<span class="inline-flex items-center px-3 py-1 rounded-lg bg-info-tint text-primary font-label-md text-label-md">
+                Computer Vision & IoT
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-tint text-secondary font-label-md text-label-md font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-teal-accent"></span>
+                Submitted
+              </span>
+<span class="inline-flex items-center gap-1.5 text-muted-text font-label-md text-label-md pl-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                Oct 28, 2026 · 10:30 AM
+              </span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-3 self-end lg:self-center flex-shrink-0">
+<button class="h-11 px-5 rounded-[14px] bg-card-surface hover:bg-surface-container text-primary-container font-label-lg text-label-lg font-medium transition-colors shadow-sm" type="button">
+            View project
+          </button>
+<button class="h-11 px-5 rounded-[14px] bg-primary-container hover:bg-sidebar-navy text-on-primary font-label-lg text-label-lg font-medium inline-flex items-center gap-2 transition-colors shadow-sm" type="button">
+<span>Evaluate</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="bg-card-surface rounded-[20px] p-6 lg:p-7 shadow-sm hover:shadow-md transition-shadow duration-200">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+<div class="flex items-start gap-5 min-w-0">
+<!-- Numbered Tile -->
+<div class="w-12 h-12 rounded-2xl bg-primary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm font-semibold flex-shrink-0 shadow-sm">
+            3
+          </div>
+<div class="flex flex-col min-w-0">
+<!-- Eyebrow -->
+<div class="font-eyebrow text-eyebrow text-muted-text uppercase tracking-wider mb-1">
+              FYP-CS-2025-031 · FYP1 DEFENSE
+            </div>
+<!-- Title -->
+<h2 class="font-headline-sm text-headline-sm font-semibold text-primary-container truncate mb-3">
+              Campus Navigation AR App
+            </h2>
+<!-- Metadata Row -->
+<div class="flex flex-wrap items-center gap-2.5">
+<span class="inline-flex items-center px-3 py-1 rounded-lg bg-info-tint text-primary font-label-md text-label-md">
+                Augmented Reality & Mobile
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-warning-bg text-warning-text font-label-md text-label-md font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-warning-text"></span>
+                Draft saved
+              </span>
+<span class="inline-flex items-center gap-1.5 text-muted-text font-label-md text-label-md pl-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                Oct 28, 2026 · 11:00 AM
+              </span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-3 self-end lg:self-center flex-shrink-0">
+<button class="h-11 px-5 rounded-[14px] bg-card-surface hover:bg-surface-container text-primary-container font-label-lg text-label-lg font-medium transition-colors shadow-sm" type="button">
+            View project
+          </button>
+<button class="h-11 px-5 rounded-[14px] bg-primary-container hover:bg-sidebar-navy text-on-primary font-label-lg text-label-lg font-medium inline-flex items-center gap-2 transition-colors shadow-sm" type="button">
+<span>Evaluate</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="bg-card-surface rounded-[20px] p-6 lg:p-7 shadow-sm hover:shadow-md transition-shadow duration-200">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+<div class="flex items-start gap-5 min-w-0">
+<!-- Numbered Tile -->
+<div class="w-12 h-12 rounded-2xl bg-primary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm font-semibold flex-shrink-0 shadow-sm">
+            4
+          </div>
+<div class="flex flex-col min-w-0">
+<!-- Eyebrow -->
+<div class="font-eyebrow text-eyebrow text-muted-text uppercase tracking-wider mb-1">
+              FYP-CS-2025-055 · FYP1 DEFENSE
+            </div>
+<!-- Title -->
+<h2 class="font-headline-sm text-headline-sm font-semibold text-primary-container truncate mb-3">
+              Secure Exam Proctoring Assistant
+            </h2>
+<!-- Metadata Row -->
+<div class="flex flex-wrap items-center gap-2.5">
+<span class="inline-flex items-center px-3 py-1 rounded-lg bg-info-tint text-primary font-label-md text-label-md">
+                Computer Vision & Security
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                Pending evaluation
+              </span>
+<span class="inline-flex items-center gap-1.5 text-muted-text font-label-md text-label-md pl-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                Oct 28, 2026 · 11:30 AM
+              </span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-3 self-end lg:self-center flex-shrink-0">
+<button class="h-11 px-5 rounded-[14px] bg-card-surface hover:bg-surface-container text-primary-container font-label-lg text-label-lg font-medium transition-colors shadow-sm" type="button">
+            View project
+          </button>
+<button class="h-11 px-5 rounded-[14px] bg-primary-container hover:bg-sidebar-navy text-on-primary font-label-lg text-label-lg font-medium inline-flex items-center gap-2 transition-colors shadow-sm" type="button">
+<span>Evaluate</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 5 (Greyed and Locked / Conflict declared) -->
+<article class="bg-surface-container-low rounded-[20px] p-6 lg:p-7 shadow-[0_1px_4px_rgba(0,0,0,0.02)] opacity-85">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+<div class="flex items-start gap-5 min-w-0">
+<!-- Numbered Tile (Muted / Locked) -->
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high text-muted-text flex items-center justify-center font-headline-sm text-headline-sm font-semibold flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">lock</span>
+</div>
+<div class="flex flex-col min-w-0">
+<!-- Eyebrow -->
+<div class="font-eyebrow text-eyebrow text-muted-text/80 uppercase tracking-wider mb-1">
+              FYP-CS-2025-068 · FYP1 DEFENSE
+            </div>
+<!-- Title -->
+<h2 class="font-headline-sm text-headline-sm font-semibold text-muted-text truncate mb-3">
+              Smart Campus Energy Monitor
+            </h2>
+<!-- Metadata Row -->
+<div class="flex flex-wrap items-center gap-2.5">
+<span class="inline-flex items-center px-3 py-1 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md">
+                IoT & Smart Systems
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-variant text-on-surface-variant font-label-md text-label-md font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                Conflict declared
+              </span>
+<span class="inline-flex items-center gap-1.5 text-muted-text font-label-md text-label-md pl-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                12:00 PM
+              </span>
+</div>
+<!-- Locked Note -->
+<div class="mt-3 inline-flex items-center gap-2 text-danger-text bg-danger-bg/50 px-3 py-1.5 rounded-lg w-fit">
+<span class="material-symbols-outlined text-[16px]">shield</span>
+<span class="font-label-md text-label-md font-medium">Conflict declared. Coordinator notified.</span>
+</div>
+</div>
+</div>
+<!-- Disabled Action Area -->
+<div class="flex items-center gap-3 self-end lg:self-center flex-shrink-0">
+<button class="h-11 px-5 rounded-[14px] bg-surface-container-high text-muted-text font-label-lg text-label-lg font-medium cursor-not-allowed inline-flex items-center gap-2" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">block</span>
+<span>Excused from jury</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+<!-- Bottom Session Notice -->
+<div class="mt-space-lg pt-space-md flex flex-col sm:flex-row sm:items-center justify-between text-muted-text font-label-md text-label-md gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">info</span>
+<span>Evaluations must be finalized within 2 hours of slot completion.</span>
+</div>
+<span>Department of Computer Science — FYP Portal</span>
+</div>
+</div></div></main></div></body></html>
